@@ -10,13 +10,13 @@ export default async function BillboardsPage({
 }) {
   const billboards = await prismadb.billboard.findMany({
     where: { storeId: params.storeId },
-    orderBy: { createAt: 'desc' }
+    orderBy: { createdAt: 'desc' }
   })
 
   const formattedBillboards: BillboardColumn[] = billboards.map(item => ({
     id: item.id,
     label: item.label,
-    createdAt: format(item.createAt, 'MMMM do, yyyy')
+    createdAt: format(item.createdAt, 'MMMM do, yyyy')
   }))
 
   return (
