@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce-Admin
 
-## Getting Started
+Esse é um repositório Full Stack de um CMS e Dashboard de um E-Commerce, desenvolvido com Next.js 13, App Router, Tailwind, Prisma, entre outras tecnologias
 
-First, run the development server:
+Esse projeto foi desenvolvido em conjunto com o projeto **[E-Commerce-Store](https://github.com/Nicolas-Wender/E-Commerce-Store)** , que por sua vez mostra o lado do cliente de um e-commerce, bem como produtos, categorias e outros dados cadastrados previamentes no painel de administrador encontrado nesse repositório
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Utilizamos Shadcn UI para a construção da interface 
+- No projeto, podemos cadastrar e administrar multiplas lojas no nosso CMS
+- Temos um CRUD completo para categorias, produtos e outras características da loja
+- Podemos acompanhar os pedidos e vendas no nosso painel
+
+### Pré-requisitos
+
+Node versão 14
+
+### Clonando o repositório
+
+```
+git clone https://github.com/Nicolas-Wender/E-Commerce-Admin.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Instalando dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm i 
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Configurando .env file
 
-## Learn More
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-To learn more about Next.js, take a look at the following resources:
+DATABASE_URL=''
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+STRIPE_API_KEY=
+FRONTEND_STORE_URL=http://localhost:3001
+STRIPE_WEBHOOK_SECRET=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Conectando PlanetScale e atualizando Prisma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npx prisma generate
+npx prisma db push
+```
 
-## Deploy on Vercel
+### Iniciando a aplicação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run dev
+```
