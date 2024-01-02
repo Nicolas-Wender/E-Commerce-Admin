@@ -1,13 +1,16 @@
 # E-Commerce-Admin
 
-Esse é um repositório Full Stack de um CMS e Dashboard de um E-Commerce, desenvolvido com Next.js 13, App Router, Tailwind, Prisma, entre outras tecnologias
+Este é um repositório Full Stack que contém um CMS junto com um Dashboard para um E-Commerce, desenvolvido utilizando Next.js 13, App Router, Tailwind, Prisma, entre outras tecnologias.
 
-Esse projeto foi desenvolvido em conjunto com o projeto **[E-Commerce-Store](https://github.com/Nicolas-Wender/E-Commerce-Store)** , que por sua vez mostra o lado do cliente de um e-commerce, bem como produtos, categorias e outros dados cadastrados previamentes no painel de administrador encontrado nesse repositório
+Este projeto foi desenvolvido juntamente com o projeto **[E-Commerce-Store](https://github.com/Nicolas-Wender/E-Commerce-Store)**, que por sua vez mostra o lado do cliente de um e-commerce, exibindo produtos, categorias e outros dados cadastrados previamente no painel de administração encontrado neste repositório.
 
-- Utilizamos Shadcn UI para a construção da interface 
-- No projeto, podemos cadastrar e administrar multiplas lojas no nosso CMS
-- Temos um CRUD completo para categorias, produtos e outras características da loja
-- Podemos acompanhar os pedidos e vendas no nosso painel
+Principais características do projeto:
+
+Utilizamos Shadcn UI para a construção da interface.
+No projeto, é possível cadastrar e administrar múltiplas lojas no nosso CMS.
+Implementamos um CRUD completo para categorias, produtos e outras características da loja.
+O painel permite o acompanhamento de pedidos e vendas.
+Sinta-se à vontade para explorar o código e contribuir para o desenvolvimento deste projeto Full Stack!
 
 ### Pré-requisitos
 
